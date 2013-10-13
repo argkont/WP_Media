@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _s
 ===
 
@@ -42,3 +43,9 @@ Then, update the stylesheet header in style.css and the links in footer.php with
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+=======
+WP_Media
+========
+
+mediatrends
+>>>>>>> 62a8e320014bf2caad3be0f31692bdb76b7835d4
