@@ -1,7 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext);
 body {
+	font-family: 'Francois One', sans-serif;
+	font-weight: normal;
+	.row{
+		margin: 0;
+	}
+	.col-no-padding{
+		padding: 0;
+	}
 	.container {
 		display: none;
 		width: 100% !important;
+		padding: 0 !important;
+		.header{
+			height: 141px;
+			padding-top: 10px;
+			background-color: #430000;
+			a{
+				color:#fff;
+			}
+			.menu{
+				li{
+					margin: -30px 10px;
+					border-right: 3px solid #430000;
+					border-bottom: 3px solid #430000;
+					a{
+						&:hover{
+							text-decoration: none;
+						}
+					}
+					&:hover{
+						background-color: #EC2125;
+						border-right: 3px solid #FF2225;
+						border-bottom: 3px solid #FF2225;
+					}
+					&.no_effect{
+						border: none;
+						&:hover{
+							border: none;
+							background-color:transparent;
+						}
+					}
+				}
+			}
+			.redes{
+				li{
+					padding: 0;
+				}
+			}
+			.btn_camp{
+				width: 141px;
+				height: 30px;
+				font-size: 11px;
+				margin: 0 auto;
+				background-color: #EC2125;
+				border-right: 3px solid #FF2225;
+				border-bottom: 3px solid #FF2225;
+				color: #fff;
+				text-transform: uppercase;
+				cursor: pointer;
+				padding-top: 4px;
+			}
+		}
+		.content-secc{
+			.row{
+				min-height: 800px;
+			}
+		}
 	}
 	footer{
 		display: none;

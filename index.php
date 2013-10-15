@@ -13,12 +13,15 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area col-lg-12 col-no-padding content-secc">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
+			
+			<?php query_posts($query_string . '&cat=-1&order=ASC'); ?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
@@ -42,5 +45,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<!--?php get_sidebar(); ?-->
 <?php get_footer(); ?>

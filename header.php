@@ -33,19 +33,39 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="container hfeed site">
+	<div class="col-md-12 col-no-padding">
 	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="row site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+
+	<header class="row header">
+		
+		<div class="col-md-12 text-center">
+			<div class="row">
+				
+				<div class="col-md-6">
+					<ul class="list-inline text-center redes">
+						<li><a href=""><img src="<?php bloginfo('template_directory');?>/img/icon_fb.gif" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_directory');?>/img/icon_tw.gif" alt=""></a></li>
+						<li><a href=""><img src="<?php bloginfo('template_directory');?>/img/icon_pi.gif" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<div class="btn_camp text-center">
+						<span>VIEW LAST CAMPAING</span>
+						<img src="<?php bloginfo('template_directory');?>/img/icon_dep.gif" alt="">
+					</div>
+				</div>
+
+			</div>
+			
+			<ul class="row list-inline menu">
+				<li><a href="">ABOUT</a></li>
+				<li><a href="">PRODUCTS & SERVICES</a></li>
+				<li class="no_effect"><a href=""><img src="<?php bloginfo('template_directory');?>/img/logo.png" alt=""></a></li>
+				<li><a href="">CAMPAIGNS</a></li>
+				<li><a href="">ADVERTISERS</a></li>
+			</ul>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'mediatrends' ); ?></h1>
-			<div class="screen-reader-text skip-link"><a href="#content"><?php _e( 'Skip to content', 'mediatrends' ); ?></a></div>
+	</header>	
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav>
-	</header>
-
-	<div id="content" class="row site-content">
+	<div id="content" class="row site-content text-center">
