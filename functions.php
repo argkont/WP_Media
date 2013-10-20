@@ -4,7 +4,6 @@
  *
  * @package mediatrends
  */
-
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -124,3 +123,10 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// enqueue a .less style sheet
+if ( ! is_admin() )
+    wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/less/bootstrap.less' );
+
+// you can also use .less files as mce editor style sheets
+add_editor_style( 'editor-style.less' );

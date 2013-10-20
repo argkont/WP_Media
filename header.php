@@ -16,12 +16,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<!--?php wp_head(); ?-->
+<?php wp_head(); ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/bootstrap.min.css">
-<link rel="stylesheet/less" href="<?php bloginfo('template_directory');?>/css/main.less">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,7 +29,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="container hfeed site">
+<div id="page" class="container hfeed site hide">
 	<div class="col-md-12 col-no-padding">
 	<?php do_action( 'before' ); ?>
 

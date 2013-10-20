@@ -1,3 +1,3 @@
 $(window).load(function(){
-		$('.container, footer').fadeIn('slow');
+		$('#page, footer').fadeIn('slow');
 });

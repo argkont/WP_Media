@@ -1,1 +1,1 @@
-	WP_Mediatrends
+WP_Media

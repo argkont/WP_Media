@@ -10,7 +10,7 @@
 
     	</div><!-- #content -->
 
-    	<footer id="colophon" class="site-footer row text-center" role="contentinfo">
+    	<footer id="colophon" class="site-footer row text-center hide" role="contentinfo">
     		<div class="site-info">
     			<?php do_action( 'mediatrends_credits' ); ?>
     			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'mediatrends' ), 'WordPress' ); ?></a>
