@@ -20,10 +20,9 @@
     	</footer><!-- #colophon -->
     </div>
 </div><!-- #page -->
-<!--script less-->
-<script src="<?php bloginfo('template_directory');?>/js/less-1.4.1.min.js"></script>
 
 <script src="<?php bloginfo('template_directory');?>/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory')?>/js/jquery.scrollNav.min.js"></script>
 <script src="<?php bloginfo('template_directory')?>/js/main.js"></script>
 <!--?php wp_footer(); ?-->
 

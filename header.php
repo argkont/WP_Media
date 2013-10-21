@@ -33,7 +33,7 @@
 	<div class="col-md-12 col-no-padding">
 	<?php do_action( 'before' ); ?>
 
-	<header class="row header">
+	<header id="header" class="row header affix">
 		
 		<div class="col-md-12 text-center">
 			<div class="row">
@@ -53,14 +53,20 @@
 				</div>
 
 			</div>
-			
-			<ul class="row list-inline menu">
-				<li><a href="">ABOUT</a></li>
-				<li><a href="">PRODUCTS & SERVICES</a></li>
-				<li class="no_effect"><a href=""><img src="<?php bloginfo('template_directory');?>/img/logo.png" alt=""></a></li>
-				<li><a href="">CAMPAIGNS</a></li>
-				<li><a href="">ADVERTISERS</a></li>
-			</ul>
+			<!--div class="cont_nav"></div-->
+			<nav class="scroll-nav">
+				<div class="scroll-nav__wrapper">
+					<span class="scroll-nav__heading">
+						<ol class="row list-inline menu scroll-nav__list">
+							<li class="scroll-nav__item"><a class="scroll-nav__link" href="#secc-2">ABOUT</a></li>
+							<li class="scroll-nav__item"><a class="scroll-nav__link" href="#secc-3">PRODUCTS & SERVICES</a></li>
+							<li class="no_effect scroll-nav__item"><a class="scroll-nav__link" href="#secc-1"><img src="<?php bloginfo('template_directory');?>/img/logo.png" alt=""></a></li>
+							<li class="scroll-nav__item"><a class="scroll-nav__link" href="#secc-4">CAMPAIGNS</a></li>
+							<li class="scroll-nav__item"><a class="scroll-nav__link" href="#secc-5">ADVERTISERS</a></li>
+						</ol>
+					</span>
+				</div>
+			</nav>
 		</div>
 
 	</header>	
