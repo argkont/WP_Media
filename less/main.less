@@ -44,6 +44,47 @@
 	position: relative;
 	z-index: 9;
 }
+.cont_slide{
+	margin-top: 8%;
+	height:283px;
+	background-image: url('../img/bg_slides.gif');
+	color: #fff;
+	text-transform: uppercase;
+}
+.indicators_slide{
+	left: 4%;
+	bottom: -60px;
+	margin-left: -28.3%;
+	li{
+		width: 32px;
+		height: 29px;
+		border: none;
+		.cajas_chicas;
+		text-indent: 0;
+		padding-top: 3px;
+		border-radius: 0 !important;
+		margin: 0;
+	}
+}
+.text_slide{
+	height: auto !important;
+	h2{
+	font-size: 24px;
+	margin-top: 30px;
+	}
+	p{
+		font-size: 18px;
+		margin: 50px 0 0;
+	}
+}
+.fle_slide{
+	width: 55px;
+	height: 55px;
+	top: 45%;
+	background-image: url('../img/fle_slider.gif');
+	overflow: hidden;
+	opacity: 1;
+}
 body {
 	.typo;
 	font-weight: normal !important;
@@ -218,12 +259,68 @@ body {
 						h1{
 							.titulos;
 						}
+						#pro_sli{
+							.cont_slide;
+							.row{
+								.text_slide;
+								ul{
+									margin:10px 0 0;
+									list-style: none;
+								}
+							}
+							.carousel-indicators{
+								.indicators_slide;
+							}
+							.carousel-control{
+								.fle_slide;
+								&.left{
+									left: -55px;
+								}
+								&.right{
+									background-position: center right;
+									right: -55px;
+								}
+							}
+						}
 					}
 					.cont_camp{
 						background-color: @color_bg_camp;
 						.cont_height;
 						h1{
 							.titulos;
+						}
+						#camp_sli{
+							.cont_slide;
+							h3{
+								font-size: 18px;
+								margin-top: 70px;
+							}
+							p{
+								font-size: 14px;
+								margin: 20px 0px 0px !important;
+								line-height: 16px;
+								span{
+									font-size: 12px;
+									text-transform: lowercase;
+								}
+							}
+							.row{
+								.text_slide;
+							}
+							.carousel-indicators{
+								.indicators_slide;
+							}
+							.carousel-control{
+								.fle_slide;
+								z-index: 99;
+								&.left{
+									left: 476px;
+								}
+								&.right{
+									background-position: center right;
+									right: 6px;
+								}
+							}
 						}
 					}
 					.cont_adv{
